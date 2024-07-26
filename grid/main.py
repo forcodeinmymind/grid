@@ -100,6 +100,11 @@ class Grid:
             string += "\n"
         return string
 
+    def get_coords(self):
+        for y in range(self.height):
+            for x in range(self.width):
+                yield x, y
+
 
 
 if __name__ == "__main__":
